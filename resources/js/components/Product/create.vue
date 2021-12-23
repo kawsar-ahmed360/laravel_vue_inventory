@@ -3,7 +3,7 @@
         <div class="card">
            <div class="card-body">
               <h2>Product Manage:</h2>
-
+               <form @submit.prevent="InsertProduct">
                <div class="row">
                  <div class="col-md-6">
                    <label>Product Name</label>
@@ -88,6 +88,7 @@
 
 
                </div>
+               </form>
            </div>
         </div>
     </div>
@@ -130,6 +131,15 @@ export default {
     },
 
     methods: {
+
+        InsertProduct(){
+           axios.post('/api/Product-store',this.form)
+           .then(()=>{
+             Notification.success();
+             this.$router.push({name:'product_index'})
+           })
+           .catch()
+        },
 
         PreviewImage(event){
           let file = event.target.files[0];

@@ -61,6 +61,74 @@ class Notification{
         }).show();
      }
 
+     SuccessIncrement(){
+        new Noty({
+           type:'success',
+           layout:'topRight',
+            text: 'Successfully Increment!!',
+            timeout:1000
+
+        }).show();
+     }
+     SuccessDecrement(){
+        new Noty({
+           type:'success',
+           layout:'topRight',
+            text: 'Successfully Decrement!!',
+            timeout:1000
+
+        }).show();
+     }
+
+     LimiteCross(){
+        new Noty({
+           type:'warning',
+           layout:'topRight',
+            text: 'Minimun quentity limite cross!!',
+            timeout:1000
+
+        }).show();
+     }
+
+     AlreadyExists(){
+        new Noty({
+           type:'error',
+           layout:'topRight',
+            text: 'Already exists!!',
+            timeout:1000
+
+        }).show();
+     }
+
+     customerNotFound(){
+        new Noty({
+            type:'error',
+            layout:'topRight',
+             text: 'Customer Field Is Null!!',
+             timeout:1000
+
+         }).show();
+     }
+     paynull(){
+        new Noty({
+            type:'error',
+            layout:'topRight',
+             text: 'Pay Empty!!',
+             timeout:1000
+
+         }).show();
+     }
+
+     payby(){
+        new Noty({
+            type:'error',
+            layout:'topRight',
+             text: 'Payment method not selected!!',
+             timeout:1000
+
+         }).show();
+     }
+
 }
 
 export default Notification = new Notification;

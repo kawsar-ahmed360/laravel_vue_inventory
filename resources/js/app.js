@@ -11,6 +11,8 @@ import {routes} from './router';
 import User from './Helplers/User';
 window.User = User;
 
+window.Reload = new Vue;
+
 //..........Notification........
 import Notification from './Helplers/Notification';
 window.Notification = Notification;
