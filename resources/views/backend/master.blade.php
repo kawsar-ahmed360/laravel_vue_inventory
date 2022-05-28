@@ -36,7 +36,8 @@
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
-    <div id="app">
+
+  <div id="app">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light" id="topbar" style="display: none" v-show=" $route.path === '/' || $route.path === '/register' || $route.path==='/forget' ? false : true ">
     <!-- Left navbar links -->
